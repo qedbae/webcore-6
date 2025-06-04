@@ -1,0 +1,240 @@
+.main-info {
+
+  &__heading {
+    margin: 0;
+    margin-bottom: 24px;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: -0.6px;
+
+    @media (min-width: $screen-md) {
+      margin-bottom: 32px;
+    }
+
+    @media (min-width: $screen-lg) {
+      margin-bottom: 8px;
+    }
+
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 4px;
+      height: 40px;
+      background-color: $color-accent;
+      vertical-align: middle;
+      margin-right: 12px;
+      border-top-right-radius: 4px;
+      border-bottom-right-radius: 4px;
+
+      @media (min-width: $screen-md) {
+        margin-right: 20px;
+      }
+
+      @media (min-width: $screen-lg) {
+        width: 3px;
+      }
+    }
+  }
+
+  &__buttons {
+    display: none;
+
+    @media (min-width: $screen-lg) {
+      display: flex;
+      gap: 32px;
+      align-items: center;
+      margin-right: 32px;
+      margin-left: auto;
+    }
+  }
+
+  &__header {
+    padding-top: 24px;
+    
+    @media (min-width: $screen-lg) {
+      display: flex;
+      padding-top: 42px;
+    }
+  }
+
+  &__button {
+    @media (min-width: $screen-lg) {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+      padding: 0;
+
+      &::after {
+        content: '';
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: $color-interactive-primary;
+        border: none;
+        cursor: pointer;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      &:hover::after {
+        opacity: 0.6;
+        transition: opacity 0.3s ease;
+      }
+    }
+  }
+
+  &__button--request {
+    @media (min-width: $screen-lg) {
+      &::after {
+        background-image: url('../img/icon-tools.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+
+  &__button--status {
+    @media (min-width: $screen-lg) {
+      &::after {
+        background-image: url('../img/icon-search.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+
+  &__button-text {
+    @media (min-width: $screen-lg) {
+      font-family: 'TT Lakes', sans-serif;
+      font-weight: 500;
+      font-size: 16px;
+      color: $color-text-primary;
+      white-space: nowrap;
+    }
+  }
+
+  &__slide-menu {
+    overflow-x: auto;
+    white-space: nowrap;
+    margin-bottom: 24px;
+    position: relative;
+
+    &::-webkit-scrollbar {
+      height: 0;
+    }
+  }
+
+  &__list {
+    margin: 0;
+    list-style: none;
+    display: flex;
+    padding-left: 16px;
+
+    @media (min-width: $screen-lg) {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__item a {
+    display: inline-block;
+    padding: 8px 16px;
+    border: 2px solid transparent;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    color: $color-text-tertiary;
+    cursor: pointer;
+
+    &:hover {
+      border-color: $color-border-hover;
+    }
+  }
+
+  &__about {
+    margin-bottom: 24px;
+
+    @media (min-width: $screen-md) {
+      display: flex;
+      align-items: flex-start;
+      gap: 48px;
+      margin: 0 24px;
+      margin-bottom: 32px;
+    }
+  }
+
+  &__about-content {
+    font-size: 14px;
+    margin: 0 16px;
+    color: $color-text-primary;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+
+    @media (min-width: $screen-md) {
+      width: 50%;
+      margin: 0;
+    }
+  }
+
+  &__paragraph {
+    @media (min-width: $screen-md) {
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+
+  &__read-more {
+    border: none;
+    background-color: transparent;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    margin-left: 8px;
+    margin-bottom: 16px;
+    padding: 0;
+    cursor: pointer;
+
+    @media (min-width: $screen-md) {
+      margin-bottom: 0;
+    }
+
+    &::before {
+      content: '';
+      display: inline-block;
+      background-image: url('../img/icon-show-more.svg');
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 7px;
+      height: 10px;
+      margin-right: 16px;
+      transition: transform 0.3s ease;
+    }
+
+    &--opened {
+      &::before {
+        transform: rotate(180deg);
+      }
+    }
+
+    &:hover {
+      opacity: 0.6;
+      transition: opacity 0.3s ease;
+      cursor: pointer;
+    }
+  }
+
+  &__page-image {
+    width: 100%;
+
+    @media (min-width: $screen-md) {
+      width: 50%;
+      height: auto;
+    }
+  }
+}

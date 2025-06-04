@@ -1,0 +1,278 @@
+.price-list {
+  &__header {
+    height: 56px;
+    background: $color-header-gradient;
+    border-top: 1px solid $color-border-section;
+    margin-bottom: 16px;
+
+    @media (min-width: $screen-md) {
+      height: 57px;
+  }
+}
+
+  &__title {
+    color: $color-text-tertiary; 
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 0;
+    margin-top: 16px;
+    margin-left: 16px;  
+
+    @media (min-width: $screen-md) {
+      margin-left: 24px;
+    }
+
+    @media (min-width: $screen-hd) {
+      margin-left: 32px;
+    }
+  }
+
+  &__swiper-container {
+    position: relative;
+
+    @media (min-width: $screen-md) {
+      margin: 0 24px;
+      margin-bottom: 24px;
+    }
+
+    @media (min-width: $screen-lg) {
+      margin-bottom: 32px;
+    }
+  }
+
+  &__swiper-wrapper {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 40px;
+    margin-left: 16px; 
+
+    @media (min-width: $screen-md) {
+      display: grid;
+      grid-template-rows: repeat(6, 65px);
+      margin: 0;
+    }
+  }
+
+  &__price-swiper {
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: 180px;
+      width: 2px;
+      box-shadow: 4px 0px 20px 30px $color-background;
+      z-index: 1;
+    }
+
+    @media (min-width: $screen-md) {
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  &__swiper-slide {
+    height: 200px;
+    list-style-type: none;
+    border: 1px solid $color-divider;
+    border-radius: 6px;
+    box-sizing: border-box;
+    background-color: $color-background-secondary;
+
+    &:first-child {
+      display: none;
+    }
+
+    @media (min-width: $screen-md) {
+      height: 65px;
+      border: none;
+      border-radius: 0;
+
+      &:first-child {
+        display: block;
+        background-color: $color-background;
+
+        &::after {
+          display: none;
+        }
+      }
+
+      &:nth-child(2) {
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px; 
+      }
+
+      &:last-child {
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius: 6px;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 1px;
+        width: 100%;
+        background: $color-price-border;
+      }
+    }
+  }
+
+  &__slide-content {
+    position: relative;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 10px;
+
+    @media (min-width: $screen-md) {
+      display: grid;
+      grid-auto-flow: column;
+      height: 65px;
+      grid-template-columns: 50% 15% 15% 30%;
+      align-items: center;
+    }
+  }
+
+  &__column-label {
+    display: none;
+
+    @media (min-width: $screen-md) {
+      display: block;
+      margin: 0;
+      color: $color-text-tertiary;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
+
+  &__service-label {
+    margin: 0;
+    color: $color-text-tertiary;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+
+    @media (min-width: $screen-md) {
+      display: none;
+    }
+  }
+
+  &__service-name {
+    margin: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  &__button {
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $color-interactive-primary;
+    width: 119px;
+    height: 32px;
+    bottom: 16px;
+    right: 16px;
+
+    border: none;
+    border-radius: 24px;
+
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: -0.15px;
+    color: $color-background-secondary;
+
+    @media (min-width: $screen-md) {
+      position: static;
+    }
+
+    &:hover {
+      opacity: 0.6;
+      transition: opacity 0.3s ease;
+      cursor: pointer;
+    }
+
+    &::after {
+      content:"";
+      display: inline-block;
+      width: 7px;
+      height: 10px;
+      background-image: url('../img/price-arrow-right.svg');
+    }
+  }
+
+  &__swiper-pagination {
+    z-index: 1;
+    
+    .swiper-pagination-bullet {
+    background-color:$color-text-secondary;
+    width: 12px;
+    height: 12px; 
+    }
+
+    @media (min-width: $screen-md) {
+      display: none;
+    }
+  }
+
+  &__footer-container {
+    margin: 0 16px;
+    padding-bottom: 40px;
+  
+    @media (min-width: $screen-lg) {
+      padding-bottom: 48px;
+    }
+  }
+
+  &__price-info {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: $color-text-primary;
+    margin: 0;
+    margin-bottom: 16px;
+
+    @media (min-width: $screen-md) {
+      max-width: 421px;
+    }
+  }
+
+  &__get-offer {
+    vertical-align: middle;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: none;
+    color: $color-text-primary;
+    letter-spacing: -0.2px;
+    padding: 0;
+
+    &::after {
+      content:"";
+      display: inline-block;
+      position: relative;
+      width: 20px;
+      height: 20px;
+      background-image: url('../img/get-offer-arrow.svg');
+      background-position: center;
+      background-repeat: no-repeat;
+      vertical-align: middle;
+    }
+
+    &:hover {
+      opacity: 0.6;
+      transition: opacity 0.3s ease;
+      cursor: pointer;
+    }
+  }
+}

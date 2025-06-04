@@ -1,0 +1,232 @@
+.side-panel {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 320px;
+  height: 100vh;
+  background-color: $color-background-secondary;
+  z-index: 10;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+  box-shadow: 16px 0px 52px $color-shadow;
+
+  &--open {
+    transform: translateX(0);
+  }
+
+  @media (min-width: $screen-sm-md) and (max-width: $screen-sm-md) {
+    width: 360px;
+  }
+
+  @media (min-width: $screen-lg) {
+    position: fixed;
+    transform: none;
+    transition: none;
+    box-shadow: none;
+  }
+
+  &__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 18px 0;
+  margin-bottom: 20px;
+
+  @media (min-width: $screen-lg) {
+    margin-bottom: 40px;
+    }
+  }
+
+  &__header-left {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-left: 24px;
+  }
+
+  &__header-right {
+    display: flex;
+    align-items: center;
+    margin-right: 24px;
+  }
+
+  &__header-button,
+  &__footer-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: $color-interactive-primary;
+    border: none;
+    transition: opacity 0.5s ease;
+
+    &:hover {
+      opacity: 0.6;
+      transition: opacity 0.3s ease;
+      cursor: pointer;
+    }
+  }
+
+  &__button--close {
+    background-image: url("../img/icon-close.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @media (min-width: $screen-lg) {
+      display: none;
+    }
+  }
+
+  &__logo {
+    width: 97px;
+    height: 51px;
+  }
+
+  &__button--search {
+    background-image: url("../img/icon-search-bold.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &__menu {
+    flex-grow: 1;
+  }
+
+  &__menu-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+  }
+
+  &__menu-item {
+    position: relative;
+
+    &:hover {
+      a::before {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__menu-item a {
+    display: block;
+    padding: 4px 24px;
+    margin-bottom: 16px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: $color-text-primary;
+    transition: color 0.5s ease;
+
+    @media (min-width: $screen-lg) {
+      margin-bottom: 24px;
+    }
+
+    &:hover {
+      color: $color-text-tertiary;
+    }
+
+    &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4px;
+    height: 32px;
+    background-color: $color-accent;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    opacity: 0;
+    }
+  }
+
+  &__footer-buttons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 16px;
+    margin-left: 24px;
+    margin-bottom: 16px;
+  }
+
+  &__button--phone {
+    background-image: url("../img/icon-phone.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &__button--chat {
+    background-image: url("../img/icon-chat.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &__button--profile {
+    background-image: url("../img/icon-profile.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding-left: 24px;
+    margin-bottom: 8px;
+
+    @media (min-width: $screen-md) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__email {
+    font-weight: 500;
+    line-height: 24px;
+    text-decoration: none;
+    color: $color-text-primary;
+
+    &:hover {
+      opacity: 0.6;
+      transition: opacity 0.3s ease;
+      cursor: pointer;
+    }
+  }
+
+  &__phone {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: -0.6px;
+    text-decoration: none;
+    color: $color-text-primary;
+
+    &:hover {
+      opacity: 0.6;
+      transition: opacity 0.3s ease;
+      cursor: pointer;
+    }
+  }
+
+  &__languages {
+    display: flex;
+    gap: 8px;
+    list-style: none;
+    padding-left: 24px;
+    margin: 0;
+    margin-top: auto;
+    margin-bottom: 32px;
+  }
+
+  &__language-link {
+    text-decoration: none;
+    font-weight: 500;
+    color: #1B1C21;
+  
+    &:hover {
+      opacity: 0.6;
+      transition: opacity 0.3s ease;
+    }
+  }
+}

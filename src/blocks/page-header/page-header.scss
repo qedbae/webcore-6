@@ -1,0 +1,127 @@
+.page-header {
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 88px;
+    border-bottom: 1px solid $color-border-section;
+
+    @media (min-width: $screen-lg) {
+      display: none;
+    }
+  }
+
+  &__left {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-left: 16px;
+
+    @media (min-width: $screen-md) {
+      margin-left: 24px;
+      gap: 20px;
+    }
+  }
+
+  &__center {
+    display: none;
+  
+    @media (min-width: $screen-md) {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-left: auto;
+      margin-right: 16px;
+    }
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-right: 16px;
+
+    @media (min-width: $screen-md) {
+      margin-right: 24px;
+    }
+  }
+
+  &__divider {
+    width: 2px;
+    height: 32px;
+    background-color: $color-divider;
+  }
+
+  &__divider-left {
+    display: none;
+
+    @media (min-width: $screen-md) {
+      display: block;
+    }
+  }
+
+  @media (min-width: $screen-md) {
+    &__divider-center {
+      display: none;
+    }
+  }
+
+  &__button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: $color-interactive-primary;
+    border: none;
+
+    &:hover {
+      opacity: 0.6;
+      transition: opacity 0.3s ease;
+      cursor: pointer;
+    }
+  }
+
+  &__button--menu {
+    background-image: url('../img/icon-menu-bars.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &__button--request {
+    background-image: url('../img/icon-tools.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &__button--status {
+    background-image: url('../img/icon-search.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: $screen-md) {
+    &__button--phone {
+      background-image: url('../img/icon-phone.svg');
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    &__button--chat {
+      background-image: url('../img/icon-chat.svg');
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    &__button--profile {
+      background-image: url('../img/icon-profile.svg');
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__logo {
+    width: 96px;
+    height: 50px;
+    display: block;
+  }
+}

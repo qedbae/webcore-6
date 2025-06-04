@@ -1,0 +1,62 @@
+.page-footer {
+  padding: 0 16px;
+  background-color: $color-background;
+  
+  color: $color-text-tertiary;
+  font-size: 500;
+  font-size: 14px;
+
+  border-top: 1px solid $color-border-section;
+
+  @media (min-width: $screen-md) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+  }
+
+  @media (min-width: $screen-lg) {
+    margin-left: 320px;
+  }
+
+  &__dev-info {
+    text-align: center;
+    margin: 16px 0;
+
+    @media (min-width: $screen-md) {
+      text-align: start;
+    }
+  }
+
+  &__privacy-policy {
+    display: block;
+    border: none;
+    background-color: transparent;
+    color: $color-text-tertiary;
+    font-size: 500;
+    font-size: 14px;
+    text-decoration: none;
+    text-align: center;
+    margin-bottom: 16px;
+
+    @media (min-width: $screen-md) {
+      margin: 16px 0;
+    }
+
+    &:hover {
+      opacity: 0.6;
+      transition: opacity 0.3s ease;
+      cursor: pointer;
+    }
+  }
+
+  &__add-info {
+    text-align: center;
+    margin: 0;
+    margin-bottom: 16px;
+
+    @media (min-width: $screen-md) {
+      text-align: end;
+      margin: 16px 0;
+    }
+  }
+}

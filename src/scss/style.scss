@@ -1,17 +1,14 @@
-$bgColor: #24292e;
-$text: #fff;
+@import 'variables.scss';
+@import 'base.scss';
+@import 'fonts.scss';
 
-@font-face {
-  font-family: 'Comic';
-  src: url('../fonts/comic.ttf') format('truetype');
-  font-weight: normal;
-  font-style: italic;
-}
+@import '../blocks/page-header/page-header.scss';
+@import '../blocks/main-info/main-info.scss';
+@import '../blocks/side-panel/side-panel.scss';
+@import '../blocks/brand-list/brand-list.scss';
+@import '../blocks/device-list/device-list.scss';
+@import '../blocks/price-list/price-list.scss';
+@import '../blocks/page-footer/page-footer.scss';
 
-body {
-  padding: 1rem;
-  margin: 0;
-  font-family: Comic, sans-serif;
-  background-color: $bgColor;
-  color: $text;
-}
+@import '../blocks/modal-callback/modal-callback.scss';
+@import '../blocks/modal-feedback/modal-feedback.scss';

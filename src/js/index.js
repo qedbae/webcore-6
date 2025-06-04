@@ -1,3 +1,9 @@
-import '../scss/style.scss'
+import '../scss/style.scss';
 
-console.log('Works!')
+import './modules/showMoreText';
+import './modules/swiperBrandList';
+import './modules/burgerMenu';
+import './modules/swiperDeviceList';
+import './modules/swiperPriceList';
+import './modules/modalCallBack';
+import './modules/modalFeedBack';
