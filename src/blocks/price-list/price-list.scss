@@ -7,17 +7,17 @@
 
     @media (min-width: $screen-md) {
       height: 57px;
+    }
   }
-}
 
   &__title {
-    color: $color-text-tertiary; 
+    color: $color-text-tertiary;
     font-size: 16px;
     font-weight: 400;
     text-transform: uppercase;
     margin: 0;
     margin-top: 16px;
-    margin-left: 16px;  
+    margin-left: 16px;
 
     @media (min-width: $screen-md) {
       margin-left: 24px;
@@ -45,7 +45,7 @@
     padding: 0;
     margin: 0;
     margin-bottom: 40px;
-    margin-left: 16px; 
+    margin-left: 16px;
 
     @media (min-width: $screen-md) {
       display: grid;
@@ -56,7 +56,7 @@
 
   &__price-swiper {
     &::after {
-      content: "";
+      content: '';
       position: absolute;
       right: 0;
       top: 0;
@@ -101,7 +101,7 @@
 
       &:nth-child(2) {
         border-top-left-radius: 6px;
-        border-top-right-radius: 6px; 
+        border-top-right-radius: 6px;
       }
 
       &:last-child {
@@ -110,7 +110,7 @@
       }
 
       &::after {
-        content: "";
+        content: '';
         position: absolute;
         bottom: 0;
         left: 0;
@@ -202,21 +202,21 @@
     }
 
     &::after {
-      content:"";
+      content: '';
       display: inline-block;
       width: 7px;
       height: 10px;
-      background-image: url('../img/price-arrow-right.svg');
+      background-image: url('/src/img/price-arrow-right.svg');
     }
   }
 
   &__swiper-pagination {
     z-index: 1;
-    
+
     .swiper-pagination-bullet {
-    background-color:$color-text-secondary;
-    width: 12px;
-    height: 12px; 
+      background-color: $color-text-secondary;
+      width: 12px;
+      height: 12px;
     }
 
     @media (min-width: $screen-md) {
@@ -227,7 +227,7 @@
   &__footer-container {
     margin: 0 16px;
     padding-bottom: 40px;
-  
+
     @media (min-width: $screen-lg) {
       padding-bottom: 48px;
     }
@@ -258,12 +258,12 @@
     padding: 0;
 
     &::after {
-      content:"";
+      content: '';
       display: inline-block;
       position: relative;
       width: 20px;
       height: 20px;
-      background-image: url('../img/get-offer-arrow.svg');
+      background-image: url('/src/img/get-offer-arrow.svg');
       background-position: center;
       background-repeat: no-repeat;
       vertical-align: middle;

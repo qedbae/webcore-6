@@ -8,17 +8,17 @@
     @media (min-width: $screen-md) {
       height: 56px;
       margin-bottom: 24px;
+    }
   }
-}
 
   &__title {
-    color: $color-text-tertiary; 
+    color: $color-text-tertiary;
     font-size: 16px;
     font-weight: 400;
     text-transform: uppercase;
     margin: 0;
     margin-top: 16px;
-    margin-left: 16px;  
+    margin-left: 16px;
 
     @media (min-width: $screen-md) {
       margin-left: 24px;
@@ -32,7 +32,7 @@
   &__swiper-container {
     position: relative;
     margin-bottom: 8px;
-    
+
     @media (min-width: $screen-md) {
       display: grid;
       justify-content: center;
@@ -50,7 +50,7 @@
     padding: 0;
     margin: 0;
     margin-bottom: 40px;
-    margin-left: 16px; 
+    margin-left: 16px;
 
     @media (min-width: $screen-md) {
       margin: 0;
@@ -72,7 +72,7 @@
 
   &__brand-swiper {
     &::after {
-      content: "";
+      content: '';
       position: absolute;
       right: 0;
       top: 0;
@@ -95,7 +95,7 @@
     border: 1px solid $color-divider;
     border-radius: 6px;
     box-sizing: border-box;
-    background-color: $color-background-secondary; 
+    background-color: $color-background-secondary;
 
     @media (min-width: $screen-md) {
       max-width: 224px;
@@ -119,7 +119,7 @@
   &__swiper-button {
     width: 40px;
     height: 40px;
-    background-image: url('../img/button.svg');
+    background-image: url('/src/img/button.svg');
     cursor: pointer;
 
     &:hover {
@@ -130,11 +130,11 @@
 
   &__swiper-pagination {
     z-index: 1;
-    
+
     .swiper-pagination-bullet {
-    background-color: $color-text-secondary;
-    width: 12px;
-    height: 12px; 
+      background-color: $color-text-secondary;
+      width: 12px;
+      height: 12px;
     }
 
     @media (min-width: $screen-md) {
@@ -158,18 +158,18 @@
       padding: 0;
       cursor: pointer;
     }
-      
+
     &::before {
-      content: "";
+      content: '';
       display: inline-block;
-      background-image: url('../img/icon-show-more.svg');
+      background-image: url('/src/img/icon-show-more.svg');
       background-position: center;
       background-repeat: no-repeat;
       width: 7px;
       height: 10px;
       margin-right: 16px;
       transition: transform 0.3s ease;
-      }
+    }
 
     &--opened {
       &::before {
