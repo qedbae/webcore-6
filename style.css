@@ -135,31 +135,31 @@ body {
     cursor: pointer; }
 
 .page-header__button--menu {
-  background-image: url("/src/img/icon-menu-bars.svg");
+  background-image: url(./static/icon-menu-bars.svg);
   background-position: center;
   background-repeat: no-repeat; }
 
 .page-header__button--request {
-  background-image: url("/src/img/icon-tools.svg");
+  background-image: url(./static/icon-tools.svg);
   background-position: center;
   background-repeat: no-repeat; }
 
 .page-header__button--status {
-  background-image: url("/src/img/icon-search.svg");
+  background-image: url(./static/icon-search.svg);
   background-position: center;
   background-repeat: no-repeat; }
 
 @media (min-width: 768px) {
   .page-header__button--phone {
-    background-image: url("/src/img/icon-phone.svg");
+    background-image: url(./static/icon-phone.svg);
     background-position: center;
     background-repeat: no-repeat; }
   .page-header__button--chat {
-    background-image: url("/src/img/icon-chat.svg");
+    background-image: url(./static/icon-chat.svg);
     background-position: center;
     background-repeat: no-repeat; }
   .page-header__button--profile {
-    background-image: url("/src/img/icon-profile.svg");
+    background-image: url(./static/icon-profile.svg);
     background-position: center;
     background-repeat: no-repeat; } }
 
@@ -241,13 +241,13 @@ body {
 
 @media (min-width: 1366px) {
   .main-info__button--request::after {
-    background-image: url("/src/img/icon-tools.svg");
+    background-image: url(./static/icon-tools.svg);
     background-position: center;
     background-repeat: no-repeat; } }
 
 @media (min-width: 1366px) {
   .main-info__button--status::after {
-    background-image: url("/src/img/icon-search.svg");
+    background-image: url(./static/icon-search.svg);
     background-position: center;
     background-repeat: no-repeat; } }
 
@@ -330,7 +330,7 @@ body {
   .main-info__read-more::before {
     content: '';
     display: inline-block;
-    background-image: url("/src/img/icon-show-more.svg");
+    background-image: url(./static/icon-show-more.svg);
     background-position: center;
     background-repeat: no-repeat;
     width: 7px;
@@ -405,7 +405,7 @@ body {
       transition: opacity 0.3s ease;
       cursor: pointer; }
   .side-panel__button--close {
-    background-image: url("/src/img/icon-close.svg");
+    background-image: url(./static/icon-close.svg);
     background-position: center;
     background-repeat: no-repeat; }
     @media (min-width: 1366px) {
@@ -415,7 +415,7 @@ body {
     width: 97px;
     height: 51px; }
   .side-panel__button--search {
-    background-image: url("/src/img/icon-search-bold.svg");
+    background-image: url(./static/icon-search-bold.svg);
     background-position: center;
     background-repeat: no-repeat; }
   .side-panel__menu {
@@ -462,15 +462,15 @@ body {
     margin-left: 24px;
     margin-bottom: 16px; }
   .side-panel__button--phone {
-    background-image: url("/src/img/icon-phone.svg");
+    background-image: url(./static/icon-phone.svg);
     background-position: center;
     background-repeat: no-repeat; }
   .side-panel__button--chat {
-    background-image: url("/src/img/icon-chat.svg");
+    background-image: url(./static/icon-chat.svg);
     background-position: center;
     background-repeat: no-repeat; }
   .side-panel__button--profile {
-    background-image: url("/src/img/icon-profile.svg");
+    background-image: url(./static/icon-profile.svg);
     background-position: center;
     background-repeat: no-repeat; }
   .side-panel__contacts {
@@ -619,7 +619,7 @@ body {
 .brand-list__swiper-button {
   width: 40px;
   height: 40px;
-  background-image: url("/src/img/button.svg");
+  background-image: url(./static/button.svg);
   cursor: pointer; }
   .brand-list__swiper-button:hover {
     transform: rotate(360deg);
@@ -653,7 +653,7 @@ body {
   .brand-list__show-more::before {
     content: '';
     display: inline-block;
-    background-image: url("/src/img/icon-show-more.svg");
+    background-image: url(./static/icon-show-more.svg);
     background-position: center;
     background-repeat: no-repeat;
     width: 7px;
@@ -770,7 +770,7 @@ body {
   right: 16px;
   width: 40px;
   height: 40px;
-  background-image: url("/src/img/button.svg");
+  background-image: url(./static/button.svg);
   cursor: pointer; }
   .device-list__swiper-button:hover {
     transform: rotate(360deg);
@@ -804,7 +804,7 @@ body {
   .device-list__show-more::before {
     content: '';
     display: inline-block;
-    background-image: url("/src/img/icon-show-more.svg");
+    background-image: url(./static/icon-show-more.svg);
     background-position: center;
     background-repeat: no-repeat;
     width: 7px;
@@ -983,7 +983,7 @@ body {
     display: inline-block;
     width: 7px;
     height: 10px;
-    background-image: url("/src/img/price-arrow-right.svg"); }
+    background-image: url(./static/price-arrow-right.svg); }
 
 .price-list__swiper-pagination {
   z-index: 1; }
@@ -1029,7 +1029,7 @@ body {
     position: relative;
     width: 20px;
     height: 20px;
-    background-image: url("/src/img/get-offer-arrow.svg");
+    background-image: url(./static/get-offer-arrow.svg);
     background-position: center;
     background-repeat: no-repeat;
     vertical-align: middle; }
@@ -1114,7 +1114,7 @@ body {
     margin-top: 24px;
     margin-left: 16px;
     margin-bottom: 32px;
-    background-image: url("/src/img/icon-close.svg");
+    background-image: url(./static/icon-close.svg);
     background-position: center;
     background-repeat: no-repeat;
     transition: opacity 0.5s ease; }
@@ -1237,7 +1237,7 @@ body {
       display: inline-block;
       width: 7px;
       height: 10px;
-      background-image: url("/src/img/price-arrow-right.svg"); }
+      background-image: url(./static/price-arrow-right.svg); }
 
 .modal-feedback {
   position: fixed;
@@ -1269,7 +1269,7 @@ body {
     margin-top: 24px;
     margin-left: 16px;
     margin-bottom: 32px;
-    background-image: url("/src/img/icon-close.svg");
+    background-image: url(./static/icon-close.svg);
     background-position: center;
     background-repeat: no-repeat; }
     @media (min-width: 768px) {
@@ -1429,7 +1429,7 @@ body {
       display: inline-block;
       width: 7px;
       height: 10px;
-      background-image: url("/src/img/price-arrow-right.svg"); }
+      background-image: url(./static/price-arrow-right.svg); }
 
 
 /*# sourceMappingURL=style.css.map*/
