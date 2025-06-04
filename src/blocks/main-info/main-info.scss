@@ -90,7 +90,7 @@
   &__button--request {
     @media (min-width: $screen-lg) {
       &::after {
-        background-image: url('/src/img/icon-tools.svg');
+        background-image: url('../img/icon-tools.svg');
         background-position: center;
         background-repeat: no-repeat;
       }
@@ -100,7 +100,7 @@
   &__button--status {
     @media (min-width: $screen-lg) {
       &::after {
-        background-image: url('/src/img/icon-search.svg');
+        background-image: url('../img/icon-search.svg');
         background-position: center;
         background-repeat: no-repeat;
       }
@@ -206,7 +206,7 @@
     &::before {
       content: '';
       display: inline-block;
-      background-image: url('/src/img/icon-show-more.svg');
+      background-image: url('../img/icon-show-more.svg');
       background-position: center;
       background-repeat: no-repeat;
       width: 7px;
